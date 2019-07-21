@@ -26,7 +26,7 @@ Output deleted tweet id.
 </code></pre>
 <h2 id="design-and-implementation-1">Design and Implementation</h2>
 <p>The archtecture of this program is similar to client server architecture where the Twitter REST API is the server.</p>
-<img src="/diagrams/Twitter.png" alt="Server-host"></p>
+<img src="/twitter.png">
 <ul>
 <li><strong>ApacheHttpHelper</strong>This class handles authorization with the Twitter REST API and make HTTP requests(GET/POST/DELETE) to get HTTPResponse.</li>
  <li><strong>TwitterResDao</strong> Implements CrdDAO interface. This class constructs URI for the ApacheHttpHelper class to execute the HTTP requests. The response from HTTP is converted into java object i.e Tweet Object.</li>
